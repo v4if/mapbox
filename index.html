@@ -1,0 +1,57 @@
+<!-- /*
+* @Author: v4if
+* @Date:   2016-09-01 09:41:17
+* @Last Modified by:   v4if
+* @Last Modified time: 2016-09-07 10:46:08
+*/ -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
+        <link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' />
+        <link rel="stylesheet" type="text/css" href="css/layout.css">
+        <script src='js/geoJson.js'></script>
+        <script src='js/serialParser.js'></script>
+        <script src='js/calcDays.js'></script>
+    </head>
+    <body>
+
+	    <div class='sidebar'>
+	      <div class='heading' id="heading_time" >
+	        <h1>我们的足迹地图</h1>
+	      </div>
+	      <div id='listings' class='listings'>
+	      	<!-- <div class="item" id="listing-0"><a href="#" class="title">1471 P St NW</a><div>Washington DC · (202) 234-7336</div></div> -->
+	      </div>
+	    </div>
+	    <div id='map' class='map'></div>
+
+			<script>
+				var latLng = {
+					"lat": 34.3,
+					"lng": 108.9
+				}
+				var minZoom = 3;
+				var maxZoom = 9;
+				L.mapbox.accessToken = 'pk.eyJ1IjoidjRpZiIsImEiOiJjaXNpOXZpdncwMDA0MzJwazl1amhmcGZkIn0.BoB2gK5shS0rCwTVpRJqhQ';
+
+				// 可选Map Styles：outdoors、streets、comic
+				var map = L.mapbox.map('map', 'mapbox.outdoors', {
+				  scrollWheelZoom: false,
+				  maxZoom: maxZoom,
+				  minZoom: minZoom
+				}).setView([latLng.lat, latLng.lng], 6);
+				map.on('ready', function() {
+				  L.mapbox.featureLayer(geojson).addTo(map);
+				  window.setInterval(function () {
+				  	buildDateData();
+				  }, 1000);
+				});
+				map.on('error', function(err) {
+				  // Handle error
+				  console.log(err);
+				});
+			</script>
+    </body>
+</html>

@@ -1,0 +1,90 @@
+<!-- /*
+* @Author: v4if
+* @Date:   2016-09-01 09:41:17
+* @Last Modified by:   v4if
+* @Last Modified time: 2016-09-07 10:46:08
+*/ -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
+        <link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' />
+        <script src='js/mapbox_feature_geojson.js'></script>
+        <script src='js/mapbox_feature_data_parser.js'></script>
+        <link rel="stylesheet" type="text/css" href="css/mapbox_main_layout.css">	   
+    </head>
+    <body>
+
+	    <div class='sidebar'>
+	   		<div id="heading_bottom">
+		      <div class='heading' id="heading_time" >
+		        <h1>我们的足迹地图</h1>
+		      </div>
+		      <img src="http://od4lcpo9k.bkt.clouddn.com/b_m.gif" width="60px" height="60px" alt="forbunny">
+	      </div>
+	      <div id='listings' class='listings'>
+	      	<!-- <div class="item" id="listing-0"><a href="#" class="title">1471 P St NW</a><div>Washington DC · (202) 234-7336</div></div> -->
+	      </div>
+	    </div>
+	    <div id='map' class='map'></div>
+
+			<script>
+				var map = loadMap();
+				
+				function loadMap() {
+					var latLng = {
+						"lat": 34.3,
+						"lng": 108.9
+					}
+					var minZoom = 3;
+					var maxZoom = 9;
+					L.mapbox.accessToken = 'pk.eyJ1IjoidjRpZiIsImEiOiJjaXNpOXZpdncwMDA0MzJwazl1amhmcGZkIn0.BoB2gK5shS0rCwTVpRJqhQ';
+
+					// 可选Map Styles：outdoors、streets、comic
+					var map = L.mapbox.map('map', 'mapbox.outdoors', {
+					  scrollWheelZoom: false,
+					  maxZoom: maxZoom,
+					  minZoom: minZoom
+					}).setView([latLng.lat, latLng.lng], 6);
+					map.on('ready', function() {
+					  L.mapbox.featureLayer(geojson).addTo(map);
+					  window.setInterval(function () {
+					  	buildDateData();
+					  }, 1000);
+					});
+					map.on('error', function(err) {
+					  // Handle error
+					  console.log(err);
+					});
+
+					return map;
+				}
+
+				function buildDateData() {
+					// 开始时间戳
+					var f_time = "2014-10-19 23:59:59";
+					f_time = f_time.replace(/-/g,"/");
+					var b_time = Date.parse(new Date(f_time));
+					// 当前时间戳
+					var e_time = Date.parse(new Date());
+					var delta_s = (e_time - b_time)/1000;
+					var days = Math.floor(delta_s/(24*60*60));
+					var left = delta_s%(24*60*60);
+					var hours = Math.floor(left/(60*60));
+					left = left%(60*60);
+					var minutes = Math.floor(left/60);
+					var seconds = Math.floor(left%60);
+
+					var time_stamp = days + "天" + hours + "时" +  minutes + "分" + seconds + "秒";
+					updateDate(time_stamp);
+					// console.log(time_stamp);
+				}
+
+				function updateDate(time_stamp) {
+					var heading_time = document.getElementById("heading_time");
+					heading_time.innerHTML = time_stamp;
+				}
+			</script>
+    </body>
+</html>

@@ -9,6 +9,7 @@
 上线地址： [v4if.me/mapbox](http://v4if.me/mapbox)  可以直接点击预览
 
 应用部署效果图：
-![forbunny](http://7xot8c.com1.z0.glb.clouddn.com/2016-09-08-172406.png)
+
+![mapbox](http://7xot8c.com1.z0.glb.clouddn.com/2016-09-08-172406.png)
 
 相关技术细节请参考博客文章，详细地址： [程序员能给女朋友做什么特别浪漫的礼物？](http://v4if.me/2016/ForBunny/)

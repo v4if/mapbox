@@ -2,7 +2,7 @@
 * @Author: v4if
 * @Date:   2016-09-01 09:41:17
 * @Last Modified by:   v4if
-* @Last Modified time: 2016-09-08 18:31:33
+* @Last Modified time: 2016-11-02 16:16:25
 */
 
 xhrRequest();
@@ -460,6 +460,7 @@ function buildTipData() {
 	// and fill it with the city and phone number
 	var details = listing.appendChild(document.createElement('div'));
 	details.innerHTML = 'Tips：<br>地图上的图标和连线可以点击的哦～';
+	details.innerHTML +=  '<br><i class="iconfont">&#xe61e;</i>&nbsp;All by <a href="https://v4if.github.io">v4if</a>'
 }
 // For event listeners
 function addEventListeners(element, currentFeature) {

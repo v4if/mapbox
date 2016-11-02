@@ -127,7 +127,7 @@ var geojson = [
 	  "properties": {
 		  "id": "marker-isk0e8ce5",
 		  "title": "西藏 — 杜鹃花",
-		  "details": "你说你想去看漫山遍野的杜鹃花，色季拉山位于西藏自治区林芝地区林芝县以东，最出名的便是那满山遍野的杜鹃花",
+		  "details": "你说你想去看漫山遍野的杜鹃花，色季拉山位于西藏自治区林芝地区林芝县以东，最出名的便是那漫山遍野的杜鹃花",
 		  "description": "<img src='http://od4lcpo9k.bkt.clouddn.com/1456471994_MpPgHY.jpg' alt='forbunny'>你说你想去看漫山遍野的杜鹃花，色季拉山位于西藏自治区林芝地区林芝县以东，最出名的便是那满山遍野的杜鹃花",
 		  "marker-size": "medium",
 		  "marker-color": "#ffffff",

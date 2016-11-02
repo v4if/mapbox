@@ -2,7 +2,7 @@
 * @Author: v4if
 * @Date:   2016-09-07 10:36:14
 * @Last Modified by:   v4if
-* @Last Modified time: 2016-11-02 16:13:58
+* @Last Modified time: 2016-11-02 16:58:04
 */
 
 body {
@@ -12,16 +12,6 @@ body {
   margin:0;
   padding:0;
   -webkit-font-smoothing:antialiased;
-}
-
-/* 阿里图标库 */
-@font-face {
-  font-family: 'iconfont';  /* project id："173059" */
-  src: url('//at.alicdn.com/t/font_w2b2rxd463s7nwmi.eot');
-  src: url('//at.alicdn.com/t/font_w2b2rxd463s7nwmi.eot') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_w2b2rxd463s7nwmi.woff') format('woff'),
-  url('//at.alicdn.com/t/font_w2b2rxd463s7nwmi.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_w2b2rxd463s7nwmi.svg#iconfont') format('svg');
 }
 
 .leaflet-container .marker-description img {
@@ -43,7 +33,7 @@ h1 {
 }
 
 a {
-  color:#404040;
+  color: #0088cc;
   text-decoration:none;
 }
 

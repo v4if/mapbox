@@ -37,65 +37,65 @@
 	      </div>
 	    </div>
 	    <div id='map' class='map'></div>
-
-			<script>
-				var map = loadMap();
-				
-				function loadMap() {
-					var latLng = {
-						"lat": 34.3,
-						"lng": 108.9
-					}
-					var minZoom = 3;
-					var maxZoom = 9;
-					L.mapbox.accessToken = 'pk.eyJ1IjoidjRpZiIsImEiOiJjaXNpOXZpdncwMDA0MzJwazl1amhmcGZkIn0.BoB2gK5shS0rCwTVpRJqhQ';
-
-					// 可选Map Styles：outdoors、streets、comic
-					var map = L.mapbox.map('map', 'mapbox.outdoors', {
-					  scrollWheelZoom: false,
-					  maxZoom: maxZoom,
-					  minZoom: minZoom
-					}).setView([latLng.lat, latLng.lng], 6);
-					map.on('ready', function() {
-					  L.mapbox.featureLayer(geojson).addTo(map);
-					  window.setInterval(function () {
-					  	buildDateData();
-					  }, 1000);
-					});
-					map.on('error', function(err) {
-					  // Handle error
-					  console.log(err);
-					});
-
-					return map;
+	    
+	    <script src='js/mapbox_feature_geojson.js'></script>
+		<script>
+			var map = loadMap();
+			
+			function loadMap() {
+				var latLng = {
+					"lat": 34.3,
+					"lng": 108.9
 				}
+				var minZoom = 3;
+				var maxZoom = 9;
+				L.mapbox.accessToken = 'pk.eyJ1IjoidjRpZiIsImEiOiJjaXNpOXZpdncwMDA0MzJwazl1amhmcGZkIn0.BoB2gK5shS0rCwTVpRJqhQ';
 
-				function buildDateData() {
-					// 开始时间戳
-					var f_time = "2014-10-19 06:06:06";
-					f_time = f_time.replace(/-/g,"/");
-					var b_time = Date.parse(new Date(f_time));
-					// 当前时间戳
-					var e_time = Date.parse(new Date());
-					var delta_s = (e_time - b_time)/1000;
-					var days = Math.floor(delta_s/(24*60*60));
-					var left = delta_s%(24*60*60);
-					var hours = Math.floor(left/(60*60));
-					left = left%(60*60);
-					var minutes = Math.floor(left/60);
-					var seconds = Math.floor(left%60);
+				// 可选Map Styles：outdoors、streets、comic
+				var map = L.mapbox.map('map', 'mapbox.outdoors', {
+				  scrollWheelZoom: false,
+				  maxZoom: maxZoom,
+				  minZoom: minZoom
+				}).setView([latLng.lat, latLng.lng], 6);
+				map.on('ready', function() {
+				  L.mapbox.featureLayer(geojson).addTo(map);
+				  window.setInterval(function () {
+				  	buildDateData();
+				  }, 1000);
+				});
+				map.on('error', function(err) {
+				  // Handle error
+				  console.log(err);
+				});
 
-					var time_stamp = days + "天" + hours + "时" +  minutes + "分" + seconds + "秒";
-					updateDate(time_stamp);
-					// console.log(time_stamp);
-				}
+				return map;
+			}
 
-				function updateDate(time_stamp) {
-					var heading_time = document.getElementById("heading_time");
-					heading_time.innerHTML = time_stamp;
-				}
-			</script>
-		<script src='js/mapbox_feature_geojson.js'></script>
+			function buildDateData() {
+				// 开始时间戳
+				var f_time = "2014-10-19 06:06:06";
+				f_time = f_time.replace(/-/g,"/");
+				var b_time = Date.parse(new Date(f_time));
+				// 当前时间戳
+				var e_time = Date.parse(new Date());
+				var delta_s = (e_time - b_time)/1000;
+				var days = Math.floor(delta_s/(24*60*60));
+				var left = delta_s%(24*60*60);
+				var hours = Math.floor(left/(60*60));
+				left = left%(60*60);
+				var minutes = Math.floor(left/60);
+				var seconds = Math.floor(left%60);
+
+				var time_stamp = days + "天" + hours + "时" +  minutes + "分" + seconds + "秒";
+				updateDate(time_stamp);
+				// console.log(time_stamp);
+			}
+
+			function updateDate(time_stamp) {
+				var heading_time = document.getElementById("heading_time");
+				heading_time.innerHTML = time_stamp;
+			}
+		</script>
 		<script src='js/mapbox_feature_data_parser.js'></script>
     </body>
 </html>

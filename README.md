@@ -6,7 +6,7 @@
 
 > 3、左侧显示在一起的时间统计，和城市列表的导航栏
 
-上线地址： [mapbox.daoapp.io](http://mapbox.daoapp.io)  可以直接点击预览
+上线地址： [https://v4if.github.io/mapbox](https://v4if.github.io/mapbox)  可以直接点击预览
 
 应用部署效果图：
 

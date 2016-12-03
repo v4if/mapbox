@@ -127,8 +127,8 @@ var geojson = [
 	  "properties": {
 		  "id": "marker-isk0e8ce5",
 		  "title": "西藏 — 杜鹃花",
-		  "details": "你说你想去看漫山遍野的杜鹃花，色季拉山位于西藏自治区林芝地区林芝县以东，最出名的便是那漫山遍野的杜鹃花",
-		  "description": "<img src='http://od4lcpo9k.bkt.clouddn.com/1456471994_MpPgHY.jpg' alt='forbunny'>你说你想去看漫山遍野的杜鹃花，色季拉山位于西藏自治区林芝地区林芝县以东，最出名的便是那满山遍野的杜鹃花",
+		  "details": "我想去西藏看格桑花，朝圣，就像仓央嘉措的诗里说的：那一天，闭目在经殿的香雾中，蓦然听见你诵经的真言；那一月，我转动所有的转经筒，不为超度只为触摸你的指尖；那一年，我磕长头匍匐在山路，不为觐见只为贴着你的温暖；那一世，我转山转水转佛塔呀，不为修来世只为在途中与你相遇",
+		  "description": "<img src='http://od4lcpo9k.bkt.clouddn.com/1456471994_MpPgHY.jpg' alt='forbunny'>我想去西藏看格桑花，朝圣，就像仓央嘉措的诗里说的：那一天，闭目在经殿的香雾中，蓦然听见你诵经的真言；那一月，我转动所有的转经筒，不为超度只为触摸你的指尖；那一年，我磕长头匍匐在山路，不为觐见只为贴着你的温暖；那一世，我转山转水转佛塔呀，不为修来世只为在途中与你相遇",
 		  "marker-size": "medium",
 		  "marker-color": "#ffffff",
 		  "marker-symbol": "golf"

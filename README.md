@@ -1,6 +1,6 @@
 # Mapbox 我和她的足迹地图 ![Language](https://img.shields.io/badge/language-html-blue.svg?style=flat-square) ![Language](https://img.shields.io/badge/language-css-blue.svg?style=flat-square) ![Language](https://img.shields.io/badge/language-js-blue.svg?style=flat-square)
 
-灵感来自于知乎的一个回答 @Tony Xu,打算给女朋友的一个惊喜
+灵感来自于知乎的一个回答 @Tony Xu，打算给女朋友的一个惊喜
 
 ## 说明
 * 地图采用Mapbox

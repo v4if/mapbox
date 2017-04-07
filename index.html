@@ -14,6 +14,9 @@
         <link rel="stylesheet" type="text/css" href="css/mapbox_main_layout.css">	   
         <script src="iconfont/iconfont.js"></script>   
 
+		<title>我们的足迹地图</title>
+		<link rel="icon" type="image/ico" href="/favicon.ico" />
+
         <!-- 阿里多色图标支持 -->
         <style type="text/css">
         .icon {
@@ -80,13 +83,15 @@
 				var e_time = Date.parse(new Date());
 				var delta_s = (e_time - b_time)/1000;
 				var days = Math.floor(delta_s/(24*60*60));
+				var years = Math.floor(days/365);
+				days = days % 365;
 				var left = delta_s%(24*60*60);
 				var hours = Math.floor(left/(60*60));
 				left = left%(60*60);
 				var minutes = Math.floor(left/60);
 				var seconds = Math.floor(left%60);
 
-				var time_stamp = days + "天" + hours + "时" +  minutes + "分" + seconds + "秒";
+				var time_stamp = years + "年" + days + "天" + hours + "时" +  minutes + "分" + seconds + "秒";
 				updateDate(time_stamp);
 				// console.log(time_stamp);
 			}

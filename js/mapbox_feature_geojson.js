@@ -8,7 +8,7 @@ var geojson = [
 		  "id": "marker-isk0a6854",
 		  "title": "通化 — 东北姑娘",
 		  "details": "那一年我们都不知道对方的存在，若干年后对彼此许下一生的承诺",
-		  "description": "<img src='https://oelwdg5d6.qnssl.com/b_home.jpg' alt='forbunny'>那一年我们都不知道对方的存在，若干年后对彼此许下一生的承诺",
+		  "description": "<img src='https://oelwdg5d6.qnssl.com/home_20170106_102540.jpg' alt='forbunny'>那一年我们都不知道对方的存在，若干年后对彼此许下一生的承诺",
 		  "marker-size": "medium",
 		  "marker-color": "#ffffff",
 		  "marker-symbol": "warehouse"
@@ -87,8 +87,8 @@ var geojson = [
 	  "properties": {
 		  "id": "marker-isk03qlp2",
 		  "title": "北京 — 你在这",
-		  "details": "1035公里的距离，短暂的相聚后留下的只是回忆，但是彼此的心连在一起",
-		  "description": "<img src='https://oelwdg5d6.qnssl.com/IMG20150920065237.jpg' alt='forbunny'>1035公里的距离，短暂的相聚后留下的只是回忆，但是彼此的心连在一起",
+		  "details": "跨越1035公里的距离，我们一起爬长城、俯瞰故宫、游北海公园，一起吃烧饼、爆肚、锅贴，短暂的4天留下的只有回忆。",
+		  "description": "<img src='https://oelwdg5d6.qnssl.com/tour_beijing_17.jpg' alt='forbunny'>跨越1035公里的距离，我们一起爬长城、俯瞰故宫、游北海公园，一起吃烧饼、爆肚、锅贴，短暂的4天留下的只有回忆。",
 		  "marker-size": "medium",
 		  "marker-color": "#ffffff",
 		  "marker-symbol": "rocket"
@@ -107,8 +107,8 @@ var geojson = [
 	  "properties": {
 		  "id": "marker-isk06d3h3",
 		  "title": "西安 — 我在这",
-		  "details": "1035公里的距离，短暂的相聚后留下的只是回忆，但是彼此的心连在一起",
-		  "description": "<img src='https://oelwdg5d6.qnssl.com/IMG20160828044527.jpg' alt='forbunny'>1035公里的距离，短暂的相聚后留下的只是回忆，但是彼此的心连在一起",
+		  "details": "跨越1035公里的距离，雄伟的西安城楼、浓厚的历史底蕴、美味的面食小吃，……………………",
+		  "description": "<img src='https://oelwdg5d6.qnssl.com/tour_xian_16.jpg' alt='forbunny'>跨越1035公里的距离，雄伟的西安城楼、浓厚的历史底蕴、美味的面食小吃，……………………",
 		  "marker-size": "medium",
 		  "marker-color": "#ffffff",
 		  "marker-symbol": "rocket"
@@ -127,8 +127,8 @@ var geojson = [
 	  "properties": {
 		  "id": "marker-isk0e8ce5",
 		  "title": "西藏 — 格桑花",
-		  "details": "你说你想去西藏看格桑花，朝圣，就像仓央嘉措的诗里说的：那一天，闭目在经殿的香雾中，蓦然听见你诵经的真言；那一月，我转动所有的转经筒，不为超度只为触摸你的指尖；那一年，我磕长头匍匐在山路，不为觐见只为贴着你的温暖；那一世，我转山转水转佛塔呀，不为修来世只为在途中与你相遇",
-		  "description": "<img src='https://oelwdg5d6.qnssl.com/mp15776198_1432107541023_12.jpeg' alt='forbunny'>你说你想去西藏看格桑花，朝圣，就像仓央嘉措的诗里说的：那一天，闭目在经殿的香雾中，蓦然听见你诵经的真言；那一月，我转动所有的转经筒，不为超度只为触摸你的指尖；那一年，我磕长头匍匐在山路，不为觐见只为贴着你的温暖；那一世，我转山转水转佛塔呀，不为修来世只为在途中与你相遇",
+		  "details": "你说你想去西藏看格桑花，朝圣，就像仓央嘉措的诗里说的：那一世，我转山转水转佛塔呀，不为修来世只为在途中与你相遇。",
+		  "description": "<img src='https://oelwdg5d6.qnssl.com/mp15776198_1432107541023_12.jpeg' alt='forbunny'>你说你想去西藏看格桑花，朝圣，就像仓央嘉措的诗里说的：那一世，我转山转水转佛塔呀，不为修来世只为在途中与你相遇。",
 		  "marker-size": "medium",
 		  "marker-color": "#ffffff",
 		  "marker-symbol": "golf"

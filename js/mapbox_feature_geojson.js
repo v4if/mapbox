@@ -107,8 +107,8 @@ var geojson = [
 	  "properties": {
 		  "id": "marker-isk06d3h3",
 		  "title": "西安 — 我在这",
-		  "details": "跨越1035公里的距离，雄伟的西安城楼、浓厚的历史底蕴、美味的面食小吃，……………………",
-		  "description": "<img src='https://oelwdg5d6.qnssl.com/tour_xian_16.jpg' alt='forbunny'>跨越1035公里的距离，雄伟的西安城楼、浓厚的历史底蕴、美味的面食小吃，……………………",
+		  "details": "跨越1035公里的距离，雄伟的西安城楼、浓厚的历史底蕴、美味的面食小吃......",
+		  "description": "<img src='https://oelwdg5d6.qnssl.com/tour_xian_16.jpg' alt='forbunny'>跨越1035公里的距离，雄伟的西安城楼、浓厚的历史底蕴、美味的面食小吃......",
 		  "marker-size": "medium",
 		  "marker-color": "#ffffff",
 		  "marker-symbol": "rocket"

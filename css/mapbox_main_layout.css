@@ -2,7 +2,7 @@
 * @Author: v4if
 * @Date:   2016-09-07 10:36:14
 * @Last Modified by:   v4if
-* @Last Modified time: 2016-11-02 16:58:04
+* @Last Modified time: 2017-04-06 22:19:22
 */
 
 body {
@@ -80,6 +80,9 @@ a:hover {
   text-decoration:none;
 }
 
+.listings .item:first-child {
+    padding: 0;
+}
 .listings .item:last-child { border-bottom:none; }
 .listings .item .title {
   display:block;

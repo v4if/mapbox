@@ -83,7 +83,9 @@
 				f_time = f_time.replace(/-/g,"/");
 				var b_time = Date.parse(new Date(f_time));
 				// 当前时间戳
-				var e_time = Date.parse(new Date());
+				f_time = "2018-8-23 22:37:06";
+				f_time = f_time.replace(/-/g,"/");
+				var e_time = Date.parse(new Date(f_time));
 				var delta_s = (e_time - b_time)/1000;
 				var days = Math.floor(delta_s/(24*60*60));
 				var years = Math.floor(days/365);
